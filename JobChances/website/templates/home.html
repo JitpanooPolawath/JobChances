@@ -1,0 +1,77 @@
+{% extends "base.html" %}
+{% block title %}JobChances{%endblock%}
+{% block content %}
+<form method="POST">
+    <h1>Calculate your chance of landing a Job</h1>
+    <div class="form-group">
+        <label for="Age">Age</label>
+        <input type="number" class="form-control" id="Age" name="Age" placeholder="Enter Age">
+    </div>
+    <div class="form-group">
+        <label for="Accessibility">Do you need Accessibility</label><br>
+        <input type="radio" id="0" name="Accessibility" value="0">
+        <label for="0">No</label><br>
+        <input type="radio" id="1" name="Accessibility" value="1">
+        <label for="1">Yes</label>
+    </div>
+    <div class="form-group">
+        <label for="EdLevel">Highest Education</label><br>
+        <input type="radio" id="4" name="EdLevel" value="4">
+        <label for="4">Undergraduate</label><br>
+        <input type="radio" id="0" name="EdLevel" value="0">
+        <label for="0">Master</label><br>
+        <input type="radio" id="3" name="EdLevel" value="3">
+        <label for="3">PHD</label><br>
+        <input type="radio" id="1" name="EdLevel" value="1">
+        <label for="1">Highschool</label><br>
+        <input type="radio" id="2" name="EdLevel" value="2">
+        <label for="2">Other</label>
+    </div>
+    <div class="form-group"><label for="Employment">How many Job did you have</label>
+        <input type="number" class="form-control" id="Employment" name="Employment" placeholder="Enter number of jobs">
+    </div>
+    <div class="form-group">
+        <label for="Gender">What is your Gender</label><br>
+        <input type="radio" id="0" name="Gender" value="0">
+        <label for="0">Male</label><br>
+        <input type="radio" id="2" name="Gender" value="2">
+        <label for="2">Female</label><br>
+        <input type="radio" id="1" name="Gender" value="1">
+        <label for="1">Other</label>
+    </div>
+    <div class="form-group">
+        <label for="MentalHealth">Do you have any Mental Condition</label><br>
+        <input type="radio" id="0" name="MentalHealth" value="0">
+        <label for="0">No</label><br>
+        <input type="radio" id="1" name="MentalHealth" value="1">
+        <label for="1">Yes</label>
+    </div>
+    <div class="form-group">
+        <label for="YearsCode">How many years have you coded</label>
+        <input type="number" class="form-control" id="YearsCode" name="YearsCode" placeholder="Enter how many years">
+    </div>
+    <div class="form-group">
+        <label for="YearsCodePro">How many years have you coded professionally</label>
+        <input type="number" class="form-control" id="YearsCodePro" name="YearsCodePro" placeholder="Enter how many years coded professionally ">
+    </div>
+    <div class="form-group">
+        <label for="Salary">What was your previous Salary</label>
+        <input type="number" class="form-control" id="Salary" name="Salary" placeholder="Enter amount">
+    </div>
+    <div class="form-group">
+        <label for="Country">Where are you planning to work</label><br>
+        <input type="radio" id="0" name="Country" value="0">
+        <label for="0">Canada</label><br>
+        <input type="radio" id="2" name="Country" value="2">
+        <label for="2">US</label><br>
+        <input type="radio" id="1" name="Country" value="1">
+        <label for="1">UK</label>
+    </div>
+    <div class="form-group">
+        <label for="ComputerSkills">How many skills do you have</label>
+        <input type="number" class="form-control" id="ComputerSkills" name="ComputerSkills" placeholder="Enter amount of skills">
+    </div>
+    <br>
+    <button type="submit" class="btn btn-primary" style="margin-bottom: 5%;">Submit</button>
+</form>
+{% endblock %}
